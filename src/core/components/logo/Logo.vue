@@ -11,7 +11,7 @@ import { useCustomizerStore } from '@/core/stores/customizer';
 
 const customizer = useCustomizerStore();
 
-//const dark = ref(false);
+// check if dark theme is active
 const dark = computed(() => {
     if (
         customizer.activeTheme === 'DARK_BLUE_THEME' ||

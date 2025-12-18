@@ -6,7 +6,7 @@ import { createApp } from 'vue';
 import { createPinia } from 'pinia';
 import { router } from '@/routes';
 import vuetify from '@/core/plugins/vuetify';
-import i18n from '@/utils/i18n';
+import i18n from '@/core/utils/i18n';
 import VueTablerIcons from 'vue-tabler-icons';
 import PerfectScrollbar from 'vue3-perfect-scrollbar';
 import VueScrollTo from 'vue-scrollto';
