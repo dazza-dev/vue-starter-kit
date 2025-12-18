@@ -8,12 +8,12 @@ const AuthRoutes = {
         {
             name: 'Side Login',
             path: '/auth/login',
-            component: () => import('@/views/authentication/SideLogin.vue')
+            component: () => import('@/modules/authentication/views/SideLogin.vue')
         },
         {
             name: 'Error',
             path: '/auth/404',
-            component: () => import('@/views/authentication/Error.vue')
+            component: () => import('@/core/components/shared/ErrorPage.vue')
         }
     ]
 };
