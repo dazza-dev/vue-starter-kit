@@ -10,7 +10,7 @@
         expand-on-hover
         width="270"
     >
-        <!---Logo part -->
+        <!--- Logo -->
         <div class="pa-5">
             <Logo />
         </div>

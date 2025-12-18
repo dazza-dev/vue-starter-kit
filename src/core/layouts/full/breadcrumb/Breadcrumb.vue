@@ -1,13 +1,10 @@
-<script setup >
-
+<script setup lang="ts">
 const props = defineProps({
     title: String,
-    breadcrumbs: Array ,
+    breadcrumbs: Array,
     icon: String,
     text: String
 });
-
-
 </script>
 
 <template>
@@ -18,14 +15,13 @@ const props = defineProps({
                     <div>
                         <h3 class="text-h3 mb-2">{{ title }}</h3>
                         <v-breadcrumbs :items="breadcrumbs" class="text-h6 font-weight-medium pa-0 ml-n1">
-                                <template v-slot:divider>
-                                    <div class="d-flex align-center text-h3 mt-n4">.</div>
-                                </template>
-                                <template v-slot:title="{ item }">
-                                    <h6 class=" text-subtitle-1">{{ item.text }}</h6>
-                                </template>
-                            </v-breadcrumbs>
-                       
+                            <template v-slot:divider>
+                                <div class="d-flex align-center text-h3 mt-n4">.</div>
+                            </template>
+                            <template v-slot:title="{ item }">
+                                <h6 class="text-subtitle-1">{{ item.text }}</h6>
+                            </template>
+                        </v-breadcrumbs>
                     </div>
                 </div>
                 <div class="d-none py-0 d-lg-block overflow-hidden">
