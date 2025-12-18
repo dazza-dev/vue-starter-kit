@@ -12,6 +12,7 @@ import PortugueseCommon from '@/core/languages/pt/common.json';
 // French
 import FrenchCommon from '@/core/languages/fr/common.json';
 
+// Messages
 const messages = {
     en: {
         common: EnglishCommon
