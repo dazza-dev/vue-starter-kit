@@ -1,12 +1,5 @@
-<script setup lang="ts">
-const props = defineProps({
-    title: String
-});
-</script>
-
-// ===============================|| Ui Parent Card||=============================== //
 <template>
-    <v-card elevation="10" >
+    <v-card elevation="10">
         <v-card-item class="py-4 px-6">
             <div class="d-sm-flex align-center justify-space-between">
                 <v-card-title class="text-h5">{{ title }}</v-card-title>
@@ -21,3 +14,9 @@ const props = defineProps({
         </v-card-text>
     </v-card>
 </template>
+
+<script setup lang="ts">
+const props = defineProps({
+    title: String
+});
+</script>

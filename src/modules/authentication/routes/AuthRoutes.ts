@@ -13,7 +13,7 @@ const AuthRoutes = {
         {
             name: 'Error',
             path: '/auth/404',
-            component: () => import('@/core/components/shared/ErrorPage.vue')
+            component: () => import('@/core/components/Error.vue')
         }
     ]
 };

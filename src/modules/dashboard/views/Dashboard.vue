@@ -9,8 +9,8 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
-import BaseBreadcrumb from '@/core/components/shared/BaseBreadcrumb.vue';
-import UiParentCard from '@/core/components/shared/UiParentCard.vue';
+import BaseBreadcrumb from '@/core/components/BaseBreadcrumb.vue';
+import UiParentCard from '@/core/components/cards/ParentCard.vue';
 
 const page = ref({ title: 'Sample Page' });
 const breadcrumbs = ref([

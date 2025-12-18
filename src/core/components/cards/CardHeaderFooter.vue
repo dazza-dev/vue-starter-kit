@@ -1,14 +1,5 @@
-<script setup lang="ts">
-const props = defineProps({
-    title: String
-});
-</script>
-
 <template>
-    <!-- -------------------------------------------------------------------- -->
-    <!-- Card with Header & Footer -->
-    <!-- -------------------------------------------------------------------- -->
-    <v-card variant="outlined" elevation="0" >
+    <v-card variant="outlined" elevation="0">
         <v-card-item>
             <v-card-title class="text-18">{{ title }}</v-card-title>
         </v-card-item>
@@ -22,3 +13,9 @@ const props = defineProps({
         </v-card-actions>
     </v-card>
 </template>
+
+<script setup lang="ts">
+const props = defineProps({
+    title: String
+});
+</script>

@@ -1,9 +1,3 @@
-<script setup lang="ts">
-const props = defineProps({
-    title: String
-});
-</script>
-
 <template>
     <v-card variant="outlined">
         <v-card-item class="py-4 px-6">
@@ -15,3 +9,9 @@ const props = defineProps({
         </v-card-text>
     </v-card>
 </template>
+
+<script setup lang="ts">
+const props = defineProps({
+    title: String
+});
+</script>

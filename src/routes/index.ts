@@ -12,7 +12,7 @@ export const router = createRouter({
     routes: [
         {
             path: '/:pathMatch(.*)*',
-            component: () => import('@/core/components/shared/ErrorPage.vue')
+            component: () => import('@/core/components/Error.vue')
         },
         DashboardRoutes,
         AuthRoutes
