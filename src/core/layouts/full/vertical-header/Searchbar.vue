@@ -1,7 +1,4 @@
 <template>
-    <!-- ---------------------------------------------- -->
-    <!-- search1 -->
-    <!-- ------------------------------------------------>
     <v-menu :close-on-content-click="false">
         <template v-slot:activator="{ props }">
             <v-btn icon class="custom-hover-primary" size="small" variant="text" color="primary" v-bind="props">

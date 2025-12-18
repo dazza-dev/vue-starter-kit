@@ -1,7 +1,5 @@
-// project imports
-import mock from '../../_mockApis/mockAdapter';
-
 import type { notificationType, profileType, languageType, appsLinkType, quickLinksType, searchType } from '@/core/types/header.type';
+
 //
 // Notification
 //

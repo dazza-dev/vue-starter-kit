@@ -1,11 +1,5 @@
 <template>
-    <!-- ---------------------------------------------- -->
-    <!---Item Childern -->
-    <!-- ---------------------------------------------- -->
     <v-list-group no-action>
-        <!-- ---------------------------------------------- -->
-        <!---Dropdown  -->
-        <!-- ---------------------------------------------- -->
         <template v-slot:activator="{ props }">
             <v-list-item v-bind="props" :value="item.title" rounded class="mb-1">
                 <!---Icon  -->
@@ -28,14 +22,10 @@
             <NavItem :item="subitem" :level="level + 1" v-else></NavItem>
         </template>
     </v-list-group>
-
-    <!-- ---------------------------------------------- -->
-    <!---End Item Sub Header -->
-    <!-- ---------------------------------------------- -->
 </template>
 
 <script setup>
-import NavItem from '../NavItem/index.vue';
+import NavItem from '../NavItem/NavItem.vue';
 import Icon from '../Icon.vue';
 
 const props = defineProps({ item: Object, level: Number });

@@ -11,10 +11,10 @@
         width="270"
     >
         <!---Logo part -->
-
         <div class="pa-5">
             <Logo />
         </div>
+
         <!-- ---------------------------------------------- -->
         <!---Navigation -->
         <!-- ---------------------------------------------- -->
@@ -31,22 +31,18 @@
                     <!---End Single Item-->
                 </template>
             </v-list>
-            <div class="pa-6 userbottom">
-                <Profile />
-            </div>
         </perfect-scrollbar>
     </v-navigation-drawer>
 </template>
 
 <script setup lang="ts">
-import { ref, shallowRef } from 'vue';
+import { shallowRef } from 'vue';
 import { useCustomizerStore } from '@/modules/authentication/stores/customizer';
 import sidebarItems from './sidebarItem';
 
-import NavGroup from './NavGroup/index.vue';
-import NavItem from './NavItem/index.vue';
+import NavGroup from './NavGroup/NavGroup.vue';
+import NavItem from './NavItem/NavItem.vue';
 import NavCollapse from './NavCollapse/NavCollapse.vue';
-import Profile from './profile/Profile.vue';
 import Logo from '../logo/Logo.vue';
 
 const customizer = useCustomizerStore();

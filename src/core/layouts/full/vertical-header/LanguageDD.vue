@@ -1,7 +1,4 @@
 <template>
-    <!-- ---------------------------------------------- -->
-    <!-- language DD -->
-    <!-- ---------------------------------------------- -->
     <v-menu :close-on-content-click="false" location="bottom">
         <template v-slot:activator="{ props }">
             <v-btn icon variant="text" color="primary" v-bind="props">

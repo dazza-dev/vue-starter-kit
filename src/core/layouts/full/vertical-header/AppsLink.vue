@@ -1,7 +1,4 @@
 <template>
-    <!-- ---------------------------------------------- -->
-    <!-- apps link -->
-    <!-- ---------------------------------------------- -->
     <v-row>
         <v-col cols="12" lg="6" v-for="(item, i) in appsLink" :key="i">
             <router-link :to="item.href" class="text-decoration-none custom-text-primary">

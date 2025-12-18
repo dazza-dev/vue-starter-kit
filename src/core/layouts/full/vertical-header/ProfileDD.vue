@@ -1,7 +1,4 @@
 <template>
-    <!-- ---------------------------------------------- -->
-    <!-- notifications DD -->
-    <!-- ---------------------------------------------- -->
     <v-menu :close-on-content-click="false">
         <template v-slot:activator="{ props }">
             <v-btn class="custom-hover-primary" variant="text" v-bind="props" icon>

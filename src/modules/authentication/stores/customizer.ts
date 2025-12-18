@@ -7,7 +7,6 @@ export const useCustomizerStore = defineStore({
         sidebarDrawer: config.sidebarDrawer,
         customizerDrawer: config.customizerDrawer,
         miniSidebar: config.miniSidebar,
-        setHorizontalLayout: config.setHorizontalLayout, // Horizontal layout
         actTheme: config.actTheme,
         boxed: config.boxed,
         setBorderCard: config.setBorderCard
@@ -23,10 +22,6 @@ export const useCustomizerStore = defineStore({
         },
         SET_CUSTOMIZER_DRAWER(payload: any) {
             this.customizerDrawer = payload;
-        },
-
-        SET_LAYOUT(payload: any) {
-            this.setHorizontalLayout = payload;
         },
         SET_THEME(payload: any) {
             this.actTheme = payload;

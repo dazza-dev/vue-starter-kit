@@ -3,17 +3,15 @@
         <v-app
             :theme="customizer.actTheme"
             :class="[
+                'verticalLayout',
                 customizer.actTheme,
                 customizer.miniSidebar ? 'mini-sidebar' : '',
-                customizer.setHorizontalLayout ? 'horizontalLayout' : 'verticalLayout',
                 customizer.setBorderCard ? 'cardBordered' : ''
             ]"
         >
             <Customizer />
-            <VerticalSidebarVue v-if="!customizer.setHorizontalLayout" />
-            <VerticalHeaderVue v-if="!customizer.setHorizontalLayout" />
-            <HorizontalHeader v-if="customizer.setHorizontalLayout" />
-            <HorizontalSidebar v-if="customizer.setHorizontalLayout" />
+            <VerticalSidebarVue />
+            <VerticalHeaderVue />
 
             <v-main>
                 <v-container fluid class="page-wrapper pb-sm-15 pb-10">

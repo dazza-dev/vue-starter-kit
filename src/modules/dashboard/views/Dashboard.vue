@@ -9,7 +9,6 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
-
 import BaseBreadcrumb from '@/core/components/shared/BaseBreadcrumb.vue';
 import UiParentCard from '@/core/components/shared/UiParentCard.vue';
 

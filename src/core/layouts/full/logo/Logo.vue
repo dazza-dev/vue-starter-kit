@@ -1,3 +1,8 @@
+<template>
+    <LogoLight v-if="dark" />
+    <LogoDark v-else />
+</template>
+
 <script setup>
 import { computed } from 'vue';
 import LogoLight from './LogoLight.vue';
@@ -22,7 +27,3 @@ const dark = computed(() => {
     }
 });
 </script>
-<template>
-    <LogoLight v-if="dark" />
-    <LogoDark v-else />
-</template>
