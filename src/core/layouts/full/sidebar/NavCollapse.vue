@@ -25,8 +25,8 @@
 </template>
 
 <script setup>
-import NavItem from '../NavItem/NavItem.vue';
-import Icon from '../Icon.vue';
+import NavItem from './NavItem.vue';
+import Icon from './Icon.vue';
 
 const props = defineProps({ item: Object, level: Number });
 </script>

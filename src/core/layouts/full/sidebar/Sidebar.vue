@@ -41,9 +41,9 @@ import { useCustomizerStore } from '@/core/stores/customizer';
 import sidebarItems from './sidebarItem';
 
 import NavGroup from './NavGroup.vue';
-import NavItem from './NavItem/NavItem.vue';
-import NavCollapse from './NavCollapse/NavCollapse.vue';
-import Logo from '../logo/Logo.vue';
+import NavItem from './NavItem.vue';
+import NavCollapse from './NavCollapse.vue';
+import Logo from '@/core/components/logo/Logo.vue';
 
 const customizer = useCustomizerStore();
 const sidebarMenu = shallowRef(sidebarItems);

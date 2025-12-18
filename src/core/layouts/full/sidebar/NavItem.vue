@@ -33,7 +33,7 @@
 </template>
 
 <script setup>
-import Icon from '../Icon.vue';
+import Icon from './Icon.vue';
 
 const props = defineProps({ item: Object, level: Number });
 </script>

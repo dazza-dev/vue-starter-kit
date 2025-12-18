@@ -40,5 +40,6 @@ import Sidebar from '@/core/layouts/full/sidebar/Sidebar.vue';
 import Header from '@/core/layouts/full/header/Header.vue';
 import Customizer from '@/core/layouts/full/widgets/customizer/Customizer.vue';
 import { useCustomizerStore } from '@/core/stores/customizer';
+
 const customizer = useCustomizerStore();
 </script>

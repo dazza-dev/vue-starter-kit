@@ -1,16 +1,17 @@
 import { defineStore } from 'pinia';
-import config from '@/core/types/config.type';
+import type { ConfigProps } from '@/core/types/config.type';
 
 export const useCustomizerStore = defineStore({
     id: 'customizer',
-    state: () => ({
-        sidebarDrawer: config.sidebarDrawer,
-        customizerDrawer: config.customizerDrawer,
-        miniSidebar: config.miniSidebar,
-        activeTheme: config.activeTheme,
-        boxed: config.boxed,
-        setBorderCard: config.setBorderCard
-    }),
+    state: () =>
+        ({
+            sidebarDrawer: false,
+            customizerDrawer: false,
+            miniSidebar: false,
+            activeTheme: 'BLUE_THEME',
+            boxed: true,
+            setBorderCard: false
+        }) as ConfigProps,
 
     getters: {},
     actions: {
