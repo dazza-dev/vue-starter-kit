@@ -1,4 +1,4 @@
-import '@/scss/style.scss';
+import '@/assets/scss/style.scss';
 
 // App
 import App from '@/App.vue';
