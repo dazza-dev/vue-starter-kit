@@ -17,7 +17,7 @@
         <!-- Search part -->
         <!-- ---------------------------------------------- -->
         <v-sheet>
-            <Searchbar />
+            <Search />
         </v-sheet>
         <!---/Search part -->
 
@@ -25,7 +25,7 @@
         <!-- Mega menu -->
         <!-- ---------------------------------------------- -->
         <div class="hidden-md-and-down">
-            <Navigations />
+            <Navigation />
         </div>
         <v-spacer />
         <!-- ---------------------------------------------- -->
@@ -34,12 +34,12 @@
         <!-- ---------------------------------------------- -->
         <!-- translate -->
         <!-- ---------------------------------------------- -->
-        <LanguageDD />
+        <Language />
 
         <!-- ---------------------------------------------- -->
         <!-- Notification -->
         <!-- ---------------------------------------------- -->
-        <NotificationDD />
+        <Notifications />
 
         <!-- right sidebar -->
         <v-btn variant="text" color="primary" class="hidden-lg-and-up" icon @click.stop="appsDrawer = !appsDrawer">
@@ -50,20 +50,20 @@
         <!-- User Profile -->
         <!-- ---------------------------------------------- -->
         <div class="ml-2">
-            <ProfileDD />
+            <Profile />
         </div>
     </v-app-bar>
 </template>
 
 <script setup lang="ts">
 import { ref, watch } from 'vue';
-import { useCustomizerStore } from '../../../stores/customizer';
+import { useCustomizerStore } from '@/core/stores/customizer';
 import { GridDotsIcon, Menu2Icon } from 'vue-tabler-icons';
-import LanguageDD from './LanguageDD.vue';
-import NotificationDD from './NotificationDD.vue';
-import ProfileDD from './ProfileDD.vue';
-import Searchbar from './Searchbar.vue';
-import Navigations from './Navigations.vue';
+import Language from '@/core/layouts/full/widgets/language/Language.vue';
+import Notifications from '@/core/layouts/full/widgets/notifications/Notifications.vue';
+import Profile from '@/core/layouts/full/widgets/profile/Profile.vue';
+import Search from '@/core/layouts/full/widgets/search/Search.vue';
+import Navigation from '@/core/layouts/full/widgets/navigations/Navigation.vue';
 
 const customizer = useCustomizerStore();
 const appsDrawer = ref(false);

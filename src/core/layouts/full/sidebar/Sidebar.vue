@@ -39,7 +39,6 @@
 import { shallowRef } from 'vue';
 import { useCustomizerStore } from '@/core/stores/customizer';
 import sidebarItems from './sidebarItem';
-
 import NavGroup from './NavGroup.vue';
 import NavItem from './NavItem.vue';
 import NavCollapse from './NavCollapse.vue';

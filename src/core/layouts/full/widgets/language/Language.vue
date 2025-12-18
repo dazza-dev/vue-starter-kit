@@ -36,7 +36,6 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
 import { languageDD } from '@/core/layouts/full/widgets/headerData';
 import flag1 from '@/assets/images/flag/icon-flag-en.svg';
 import flag2 from '@/assets/images/flag/icon-flag-ro.svg';
