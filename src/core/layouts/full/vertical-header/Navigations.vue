@@ -1,17 +1,12 @@
-<script setup lang="ts">
-import { ref } from 'vue';
-import QuickLinks from './QuickLinks.vue';
-import AppsLink from './AppsLink.vue';
-import { HelpIcon,ChevronDownIcon } from 'vue-tabler-icons';
-</script>
-
 <template>
     <!-- ---------------------------------------------- -->
     <!-- mega menu DD -->
     <!-- ---------------------------------------------- -->
     <v-menu open-on-hover :close-on-content-click="false">
         <template v-slot:activator="{ props }">
-            <v-btn class="hidden-sm-and-down" rounded="sm" variant="text" color="primary" v-bind="props"> Apps  <ChevronDownIcon size="16" class="mt-1 ml-1" /> </v-btn>
+            <v-btn class="hidden-sm-and-down" rounded="sm" variant="text" color="primary" v-bind="props">
+                Apps <ChevronDownIcon size="16" class="mt-1 ml-1" />
+            </v-btn>
         </template>
         <v-sheet width="900" height="382" elevation="10" rounded="md" class="pa-4 pb-0">
             <div>
@@ -47,3 +42,10 @@ import { HelpIcon,ChevronDownIcon } from 'vue-tabler-icons';
     <v-btn variant="text" color="primary">Calendar </v-btn>
     <v-btn variant="text" color="primary">Email </v-btn>
 </template>
+
+<script setup lang="ts">
+import { ref } from 'vue';
+import QuickLinks from './QuickLinks.vue';
+import AppsLink from './AppsLink.vue';
+import { HelpIcon, ChevronDownIcon } from 'vue-tabler-icons';
+</script>

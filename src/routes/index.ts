@@ -1,6 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import MainRoutes from './MainRoutes';
-import AuthRoutes from './AuthRoutes';
+
+// Routes
+import AuthRoutes from '@/modules/authentication/routes/AuthRoutes';
+import DashboardRoutes from '@/modules/dashboard/routes/DashboardRoutes';
+
+// Auth Store
 import { useAuthStore } from '@/modules/authentication/stores/auth';
 
 export const router = createRouter({
@@ -10,7 +14,7 @@ export const router = createRouter({
             path: '/:pathMatch(.*)*',
             component: () => import('@/core/components/shared/ErrorPage.vue')
         },
-        MainRoutes,
+        DashboardRoutes,
         AuthRoutes
     ]
 });

@@ -1,18 +1,3 @@
-<script setup lang="ts">
-import { ref, shallowRef } from 'vue';
-import { useCustomizerStore } from '@/modules/authentication/stores/customizer';
-import sidebarItems from './sidebarItem';
-
-import NavGroup from './NavGroup/index.vue';
-import NavItem from './NavItem/index.vue';
-import NavCollapse from './NavCollapse/NavCollapse.vue';
-import Profile from './profile/Profile.vue';
-import Logo from '../logo/Logo.vue';
-
-const customizer = useCustomizerStore();
-const sidebarMenu = shallowRef(sidebarItems);
-</script>
-
 <template>
     <v-navigation-drawer
         left
@@ -52,3 +37,18 @@ const sidebarMenu = shallowRef(sidebarItems);
         </perfect-scrollbar>
     </v-navigation-drawer>
 </template>
+
+<script setup lang="ts">
+import { ref, shallowRef } from 'vue';
+import { useCustomizerStore } from '@/modules/authentication/stores/customizer';
+import sidebarItems from './sidebarItem';
+
+import NavGroup from './NavGroup/index.vue';
+import NavItem from './NavItem/index.vue';
+import NavCollapse from './NavCollapse/NavCollapse.vue';
+import Profile from './profile/Profile.vue';
+import Logo from '../logo/Logo.vue';
+
+const customizer = useCustomizerStore();
+const sidebarMenu = shallowRef(sidebarItems);
+</script>

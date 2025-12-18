@@ -1,11 +1,3 @@
-<script setup lang="ts">
-import { ref } from 'vue';
-import { languageDD } from '@/core/layouts/headerData';
-import flag1 from '@/assets/images/flag/icon-flag-en.svg';
-import flag2 from '@/assets/images/flag/icon-flag-ro.svg';
-import flag3 from '@/assets/images/flag/icon-flag-zh.svg';
-import flag4 from '@/assets/images/flag/icon-flag-fr.svg';
-</script>
 <template>
     <!-- ---------------------------------------------- -->
     <!-- language DD -->
@@ -45,3 +37,12 @@ import flag4 from '@/assets/images/flag/icon-flag-fr.svg';
         </v-sheet>
     </v-menu>
 </template>
+
+<script setup lang="ts">
+import { ref } from 'vue';
+import { languageDD } from '@/core/layouts/headerData';
+import flag1 from '@/assets/images/flag/icon-flag-en.svg';
+import flag2 from '@/assets/images/flag/icon-flag-ro.svg';
+import flag3 from '@/assets/images/flag/icon-flag-zh.svg';
+import flag4 from '@/assets/images/flag/icon-flag-fr.svg';
+</script>

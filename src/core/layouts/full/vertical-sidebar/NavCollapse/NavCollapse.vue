@@ -1,10 +1,3 @@
-<script setup>
-import NavItem from '../NavItem/index.vue';
-import Icon from '../Icon.vue';
-
-const props = defineProps({ item: Object, level: Number });
-</script>
-
 <template>
     <!-- ---------------------------------------------- -->
     <!---Item Childern -->
@@ -40,3 +33,10 @@ const props = defineProps({ item: Object, level: Number });
     <!---End Item Sub Header -->
     <!-- ---------------------------------------------- -->
 </template>
+
+<script setup>
+import NavItem from '../NavItem/index.vue';
+import Icon from '../Icon.vue';
+
+const props = defineProps({ item: Object, level: Number });
+</script>

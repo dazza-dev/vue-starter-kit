@@ -1,6 +1,3 @@
-<script setup lang="ts">
-import { appsLink } from '@/core/layouts/headerData';
-</script>
 <template>
     <!-- ---------------------------------------------- -->
     <!-- apps link -->
@@ -21,3 +18,7 @@ import { appsLink } from '@/core/layouts/headerData';
         </v-col>
     </v-row>
 </template>
+
+<script setup lang="ts">
+import { appsLink } from '@/core/layouts/headerData';
+</script>

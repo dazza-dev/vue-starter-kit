@@ -1,7 +1,3 @@
-<script setup lang="ts">
-import { quickLink } from '@/core/layouts/headerData';
-</script>
-
 <template>
     <!-- ---------------------------------------------- -->
     <!-- language DD -->
@@ -12,3 +8,7 @@ import { quickLink } from '@/core/layouts/headerData';
         }}</router-link>
     </div>
 </template>
+
+<script setup lang="ts">
+import { quickLink } from '@/core/layouts/headerData';
+</script>

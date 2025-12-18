@@ -1,26 +1,3 @@
-<script setup lang="ts">
-import { ref, watch, computed } from 'vue';
-import { useCustomizerStore } from '../../../../modules/authentication/stores/customizer';
-import { GridDotsIcon, LanguageIcon, SearchIcon, Menu2Icon, BellRingingIcon, ShoppingCartIcon } from 'vue-tabler-icons';
-import LanguageDD from './LanguageDD.vue';
-import NotificationDD from './NotificationDD.vue';
-import ProfileDD from './ProfileDD.vue';
-import Searchbar from './Searchbar.vue';
-import RightMobileSidebar from './RightMobileSidebar.vue';
-import Navigations from './Navigations.vue';
-
-const customizer = useCustomizerStore();
-const showSearch = ref(false);
-const appsdrawer = ref(false);
-const priority = ref(customizer.setHorizontalLayout ? 0 : 0);
-function searchbox() {
-    showSearch.value = !showSearch.value;
-}
-watch(priority, (newPriority) => {
-    priority.value = newPriority;
-});
-</script>
-
 <template>
     <v-app-bar elevation="0" :priority="priority" height="70" class="">
         <v-btn
@@ -103,3 +80,26 @@ watch(priority, (newPriority) => {
         <RightMobileSidebar />
     </v-navigation-drawer>
 </template>
+
+<script setup lang="ts">
+import { ref, watch, computed } from 'vue';
+import { useCustomizerStore } from '../../../../modules/authentication/stores/customizer';
+import { GridDotsIcon, LanguageIcon, SearchIcon, Menu2Icon, BellRingingIcon, ShoppingCartIcon } from 'vue-tabler-icons';
+import LanguageDD from './LanguageDD.vue';
+import NotificationDD from './NotificationDD.vue';
+import ProfileDD from './ProfileDD.vue';
+import Searchbar from './Searchbar.vue';
+import RightMobileSidebar from './RightMobileSidebar.vue';
+import Navigations from './Navigations.vue';
+
+const customizer = useCustomizerStore();
+const showSearch = ref(false);
+const appsdrawer = ref(false);
+const priority = ref(customizer.setHorizontalLayout ? 0 : 0);
+function searchbox() {
+    showSearch.value = !showSearch.value;
+}
+watch(priority, (newPriority) => {
+    priority.value = newPriority;
+});
+</script>

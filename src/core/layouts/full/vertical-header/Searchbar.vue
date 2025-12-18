@@ -1,8 +1,3 @@
-<script setup>
-import { SearchIcon } from 'vue-tabler-icons';
-import { searchSugg } from '@/core/layouts/headerData';
-</script>
-
 <template>
     <!-- ---------------------------------------------- -->
     <!-- search1 -->
@@ -37,3 +32,8 @@ import { searchSugg } from '@/core/layouts/headerData';
         </v-sheet>
     </v-menu>
 </template>
+
+<script setup>
+import { SearchIcon } from 'vue-tabler-icons';
+import { searchSugg } from '@/core/layouts/headerData';
+</script>

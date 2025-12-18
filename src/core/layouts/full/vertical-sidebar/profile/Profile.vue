@@ -1,9 +1,3 @@
-<script setup lang="ts">
-import { useAuthStore } from '@/modules/authentication/stores/auth';
-
-const authStore = useAuthStore();
-</script>
-
 <template>
     <v-sheet rounded="md" color="lightsecondary" class="px-4 py-3 ExtraBox">
         <div class="d-flex align-center hide-menu">
@@ -24,6 +18,13 @@ const authStore = useAuthStore();
         </div>
     </v-sheet>
 </template>
+
+<script setup lang="ts">
+import { useAuthStore } from '@/modules/authentication/stores/auth';
+
+const authStore = useAuthStore();
+</script>
+
 <style lang="scss">
 .ExtraBox {
     position: relative;

@@ -1,9 +1,3 @@
-<script setup>
-import Icon from '../Icon.vue';
-
-const props = defineProps({ item: Object, level: Number });
-</script>
-
 <template>
     <!---Single Item-->
     <v-list-item
@@ -37,3 +31,9 @@ const props = defineProps({ item: Object, level: Number });
         </template>
     </v-list-item>
 </template>
+
+<script setup>
+import Icon from '../Icon.vue';
+
+const props = defineProps({ item: Object, level: Number });
+</script>

@@ -1,12 +1,3 @@
-<script setup lang="ts">
-import { MailIcon } from 'vue-tabler-icons';
-import { profileDD } from '@/core/layouts/headerData';
-
-import { useAuthStore } from '@/modules/authentication/stores/auth';
-
-const authStore = useAuthStore();
-</script>
-
 <template>
     <!-- ---------------------------------------------- -->
     <!-- notifications DD -->
@@ -68,3 +59,12 @@ const authStore = useAuthStore();
         </v-sheet>
     </v-menu>
 </template>
+
+<script setup lang="ts">
+import { MailIcon } from 'vue-tabler-icons';
+import { profileDD } from '@/core/layouts/headerData';
+
+import { useAuthStore } from '@/modules/authentication/stores/auth';
+
+const authStore = useAuthStore();
+</script>

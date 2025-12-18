@@ -1,6 +1,3 @@
-<script setup lang="ts">
-import { notifications } from '@/core/layouts/headerData';
-</script>
 <template>
     <!-- ---------------------------------------------- -->
     <!-- notifications DD -->
@@ -42,3 +39,7 @@ import { notifications } from '@/core/layouts/headerData';
         </v-sheet>
     </v-menu>
 </template>
+
+<script setup lang="ts">
+import { notifications } from '@/core/layouts/headerData';
+</script>

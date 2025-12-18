@@ -1,12 +1,3 @@
-<script setup lang="ts">
-import { ref } from 'vue';
-import { AppsIcon, CalendarIcon, MailIcon, MessagesIcon } from 'vue-tabler-icons';
-import AppsLink from './AppsLink.vue';
-import QuickLinks from './QuickLinks.vue';
-
-const open = ref(['Apps']);
-</script>
-
 <template>
     <div class="pt-6">
         <h5 class="text-h5 mb-4 px-5">Navigation</h5>
@@ -57,3 +48,12 @@ const open = ref(['Apps']);
     padding-inline-start: 26px !important;
 }
 </style>
+
+<script setup lang="ts">
+import { ref } from 'vue';
+import { AppsIcon, CalendarIcon, MailIcon, MessagesIcon } from 'vue-tabler-icons';
+import AppsLink from './AppsLink.vue';
+import QuickLinks from './QuickLinks.vue';
+
+const open = ref(['Apps']);
+</script>

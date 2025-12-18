@@ -1,15 +1,3 @@
-<script setup lang="ts">
-import { RouterView } from 'vue-router';
-import VerticalSidebarVue from './vertical-sidebar/VerticalSidebar.vue';
-import VerticalHeaderVue from './vertical-header/VerticalHeader.vue';
-import HorizontalHeader from './horizontal-header/HorizontalHeader.vue';
-import HorizontalSidebar from './horizontal-sidebar/HorizontalSidebar.vue';
-import Customizer from './customizer/Customizer.vue';
-import { useCustomizerStore } from '../../../modules/authentication/stores/customizer';
-import { pl, zhHans } from 'vuetify/locale';
-const customizer = useCustomizerStore();
-</script>
-
 <template>
     <v-locale-provider>
         <v-app
@@ -47,3 +35,12 @@ const customizer = useCustomizerStore();
         </v-app>
     </v-locale-provider>
 </template>
+
+<script setup lang="ts">
+import { RouterView } from 'vue-router';
+import VerticalSidebarVue from './vertical-sidebar/VerticalSidebar.vue';
+import VerticalHeaderVue from './vertical-header/VerticalHeader.vue';
+import Customizer from './customizer/Customizer.vue';
+import { useCustomizerStore } from '../../../modules/authentication/stores/customizer';
+const customizer = useCustomizerStore();
+</script>

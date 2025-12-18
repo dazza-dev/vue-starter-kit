@@ -1,8 +1,3 @@
-<script setup lang="ts">
-import Logo from '@/core/layouts/full/logo/Logo.vue';
-import LoginForm from '@/components/auth/LoginForm.vue';
-</script>
-
 <template>
     <div class="pa-3">
         <v-row class="h-100vh mh-100 auth">
@@ -32,3 +27,8 @@ import LoginForm from '@/components/auth/LoginForm.vue';
         </v-row>
     </div>
 </template>
+
+<script setup lang="ts">
+import Logo from '@/core/layouts/full/logo/Logo.vue';
+import LoginForm from '@/components/auth/LoginForm.vue';
+</script>
