@@ -29,6 +29,6 @@
 </template>
 
 <script setup lang="ts">
-import Logo from '@/core/layouts/full/logo/Logo.vue';
-import LoginForm from '@/components/auth/LoginForm.vue';
+import Logo from '@/core/components/logo/Logo.vue';
+import LoginForm from '@/modules/authentication/components/LoginForm.vue';
 </script>

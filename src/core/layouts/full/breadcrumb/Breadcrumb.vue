@@ -1,12 +1,3 @@
-<script setup lang="ts">
-const props = defineProps({
-    title: String,
-    breadcrumbs: Array,
-    icon: String,
-    text: String
-});
-</script>
-
 <template>
     <v-card class="bg-lightprimary elevation-0 rounded-md mb-8">
         <div class="px-8 py-8 py-lg-0">
@@ -33,6 +24,15 @@ const props = defineProps({
         </div>
     </v-card>
 </template>
+
+<script setup lang="ts">
+const props = defineProps({
+    title: String,
+    breadcrumbs: Array,
+    icon: String,
+    text: String
+});
+</script>
 
 <style lang="scss">
 .page-breadcrumb {

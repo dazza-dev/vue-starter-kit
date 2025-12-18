@@ -1,29 +1,3 @@
-<script setup lang="ts">
-import { ref } from 'vue';
-import { useAuthStore } from '@/modules/authentication/stores/auth';
-import { Form } from 'vee-validate';
-
-/*Social icons*/
-import google from '@/assets/images/svgs/google-icon.svg';
-import facebook from '@/assets/images/svgs/facebook-icon.svg';
-
-const checkbox = ref(false);
-const valid = ref(false);
-const show1 = ref(false);
-const password = ref('admin123');
-const username = ref('info@wrappixel.com');
-const passwordRules = ref([
-    (v: string) => !!v || 'Password is required',
-    (v: string) => (v && v.length <= 10) || 'Password must be less than 10 characters'
-]);
-const emailRules = ref([(v: string) => !!v || 'E-mail is required', (v: string) => /.+@.+\..+/.test(v) || 'E-mail must be valid']);
-
-function validate(values: any, { setErrors }: any) {
-    const authStore = useAuthStore();
-    return authStore.login(username.value, password.value).catch((error) => setErrors({ apiError: error }));
-}
-</script>
-
 <template>
     <v-row class="d-flex mb-3">
         <v-col cols="6" sm="6" class="pr-2">
@@ -71,3 +45,27 @@ function validate(values: any, { setErrors }: any) {
         </div>
     </Form>
 </template>
+
+<script setup lang="ts">
+import { ref } from 'vue';
+import { useAuthStore } from '@/modules/authentication/stores/auth';
+
+/*Social icons*/
+import google from '@/assets/images/svgs/google-icon.svg';
+import facebook from '@/assets/images/svgs/facebook-icon.svg';
+
+const checkbox = ref(false);
+const valid = ref(false);
+const password = ref('admin123');
+const username = ref('info@wrappixel.com');
+const passwordRules = ref([
+    (v: string) => !!v || 'Password is required',
+    (v: string) => (v && v.length <= 10) || 'Password must be less than 10 characters'
+]);
+const emailRules = ref([(v: string) => !!v || 'E-mail is required', (v: string) => /.+@.+\..+/.test(v) || 'E-mail must be valid']);
+
+function validate(values: any, { setErrors }: any) {
+    const authStore = useAuthStore();
+    return authStore.login(username.value, password.value).catch((error) => setErrors({ apiError: error }));
+}
+</script>
