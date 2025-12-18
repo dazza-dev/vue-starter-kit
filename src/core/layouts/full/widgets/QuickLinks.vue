@@ -7,5 +7,5 @@
 </template>
 
 <script setup lang="ts">
-import { quickLink } from '@/core/layouts/headerData';
+import { quickLink } from '@/core/layouts/full/widgets/headerData';
 </script>

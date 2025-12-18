@@ -7,19 +7,19 @@
 import { computed } from 'vue';
 import LogoLight from './LogoLight.vue';
 import LogoDark from './LogoDark.vue';
-import { useCustomizerStore } from '@/modules/authentication/stores/customizer';
+import { useCustomizerStore } from '@/core/stores/customizer';
 
 const customizer = useCustomizerStore();
 
 //const dark = ref(false);
 const dark = computed(() => {
     if (
-        customizer.actTheme === 'DARK_BLUE_THEME' ||
-        customizer.actTheme === 'DARK_AQUA_THEME' ||
-        customizer.actTheme === 'DARK_ORANGE_THEME' ||
-        customizer.actTheme === 'DARK_PURPLE_THEME' ||
-        customizer.actTheme === 'DARK_GREEN_THEME' ||
-        customizer.actTheme === 'DARK_CYAN_THEME'
+        customizer.activeTheme === 'DARK_BLUE_THEME' ||
+        customizer.activeTheme === 'DARK_AQUA_THEME' ||
+        customizer.activeTheme === 'DARK_ORANGE_THEME' ||
+        customizer.activeTheme === 'DARK_PURPLE_THEME' ||
+        customizer.activeTheme === 'DARK_GREEN_THEME' ||
+        customizer.activeTheme === 'DARK_CYAN_THEME'
     ) {
         return true;
     } else {

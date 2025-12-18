@@ -59,7 +59,7 @@
 
 <script setup lang="ts">
 import { MailIcon } from 'vue-tabler-icons';
-import { profileDD } from '@/core/layouts/headerData';
+import { profileDD } from '@/core/layouts/full/widgets/headerData';
 
 import { useAuthStore } from '@/modules/authentication/stores/auth';
 

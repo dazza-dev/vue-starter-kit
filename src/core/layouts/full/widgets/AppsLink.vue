@@ -17,5 +17,5 @@
 </template>
 
 <script setup lang="ts">
-import { appsLink } from '@/core/layouts/headerData';
+import { appsLink } from '@/core/layouts/full/widgets/headerData';
 </script>

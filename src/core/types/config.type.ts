@@ -2,7 +2,7 @@ export type ConfigProps = {
     sidebarDrawer: any;
     customizerDrawer: boolean;
     miniSidebar: boolean;
-    actTheme: string;
+    activeTheme: string;
     boxed: boolean;
     setBorderCard: boolean;
 };
@@ -11,7 +11,7 @@ const config: ConfigProps = {
     sidebarDrawer: null,
     customizerDrawer: false,
     miniSidebar: false,
-    actTheme: 'BLUE_THEME',
+    activeTheme: 'BLUE_THEME',
     boxed: true,
     setBorderCard: false
 };

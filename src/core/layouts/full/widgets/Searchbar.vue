@@ -32,5 +32,5 @@
 
 <script setup>
 import { SearchIcon } from 'vue-tabler-icons';
-import { searchSugg } from '@/core/layouts/headerData';
+import { searchSugg } from '@/core/layouts/full/widgets/headerData';
 </script>

@@ -7,7 +7,7 @@ export const useCustomizerStore = defineStore({
         sidebarDrawer: config.sidebarDrawer,
         customizerDrawer: config.customizerDrawer,
         miniSidebar: config.miniSidebar,
-        actTheme: config.actTheme,
+        activeTheme: config.activeTheme,
         boxed: config.boxed,
         setBorderCard: config.setBorderCard
     }),
@@ -24,7 +24,7 @@ export const useCustomizerStore = defineStore({
             this.customizerDrawer = payload;
         },
         SET_THEME(payload: any) {
-            this.actTheme = payload;
+            this.activeTheme = payload;
         },
         SET_CARD_BORDER(payload: any) {
             this.setBorderCard = payload;

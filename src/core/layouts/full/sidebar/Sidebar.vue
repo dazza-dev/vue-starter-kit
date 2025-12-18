@@ -37,10 +37,10 @@
 
 <script setup lang="ts">
 import { shallowRef } from 'vue';
-import { useCustomizerStore } from '@/modules/authentication/stores/customizer';
+import { useCustomizerStore } from '@/core/stores/customizer';
 import sidebarItems from './sidebarItem';
 
-import NavGroup from './NavGroup/NavGroup.vue';
+import NavGroup from './NavGroup.vue';
 import NavItem from './NavItem/NavItem.vue';
 import NavCollapse from './NavCollapse/NavCollapse.vue';
 import Logo from '../logo/Logo.vue';

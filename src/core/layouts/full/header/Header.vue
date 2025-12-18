@@ -1,5 +1,5 @@
 <template>
-    <v-app-bar elevation="0" :priority="priority" height="70" class="">
+    <v-app-bar elevation="0" :priority="priority" height="70">
         <v-btn
             class="hidden-md-and-down"
             icon
@@ -42,7 +42,7 @@
         <NotificationDD />
 
         <!-- right sidebar -->
-        <v-btn variant="text" color="primary" class="hidden-lg-and-up" icon @click.stop="appsdrawer = !appsdrawer">
+        <v-btn variant="text" color="primary" class="hidden-lg-and-up" icon @click.stop="appsDrawer = !appsDrawer">
             <GridDotsIcon size="17" stroke-width="1.5" />
         </v-btn>
 
@@ -57,7 +57,7 @@
 
 <script setup lang="ts">
 import { ref, watch } from 'vue';
-import { useCustomizerStore } from '../../../../modules/authentication/stores/customizer';
+import { useCustomizerStore } from '../../../stores/customizer';
 import { GridDotsIcon, Menu2Icon } from 'vue-tabler-icons';
 import LanguageDD from './LanguageDD.vue';
 import NotificationDD from './NotificationDD.vue';
@@ -66,7 +66,7 @@ import Searchbar from './Searchbar.vue';
 import Navigations from './Navigations.vue';
 
 const customizer = useCustomizerStore();
-const appsdrawer = ref(false);
+const appsDrawer = ref(false);
 const priority = ref(0);
 
 watch(priority, (newPriority) => {

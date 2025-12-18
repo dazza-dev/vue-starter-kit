@@ -38,5 +38,5 @@
 </template>
 
 <script setup lang="ts">
-import { notifications } from '@/core/layouts/headerData';
+import { notifications } from '@/core/layouts/full/widgets/headerData';
 </script>

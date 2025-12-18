@@ -7,7 +7,7 @@
         <perfect-scrollbar style="height: calc(100vh - 90px)">
             <div class="pa-6">
                 <h6 class="text-h6 mt-8 mb-5">Theme Color</h6>
-                <v-item-group mandatory v-model="customizer.actTheme" class="ml-n2 v-row">
+                <v-item-group mandatory v-model="customizer.activeTheme" class="ml-n2 v-row">
                     <v-col cols="4" v-for="theme in themeColors" :key="theme.name" class="pa-2">
                         <v-item v-slot="{ isSelected, toggle }" :value="theme.name">
                             <v-sheet
@@ -24,7 +24,7 @@
                     </v-col>
                 </v-item-group>
                 <h6 class="text-h6 mt-11 mb-5">Theme Dark Color</h6>
-                <v-item-group mandatory v-model="customizer.actTheme" class="ml-n2 v-row">
+                <v-item-group mandatory v-model="customizer.activeTheme" class="ml-n2 v-row">
                     <v-col cols="4" v-for="theme in DarkthemeColors" :key="theme.name" class="pa-2">
                         <v-item v-slot="{ isSelected, toggle }" :value="theme.name">
                             <v-sheet
@@ -81,7 +81,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import { useTheme } from 'vuetify';
-import { useCustomizerStore } from '@/modules/authentication/stores/customizer';
+import { useCustomizerStore } from '@/core/stores/customizer';
 import { CheckIcon, LayoutDistributeHorizontalIcon, LayoutDistributeVerticalIcon, LayoutSidebarLeftCollapseIcon } from 'vue-tabler-icons';
 
 const theme = useTheme();

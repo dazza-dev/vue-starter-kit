@@ -1,17 +1,17 @@
 <template>
     <v-locale-provider>
         <v-app
-            :theme="customizer.actTheme"
+            :theme="customizer.activeTheme"
             :class="[
                 'verticalLayout',
-                customizer.actTheme,
+                customizer.activeTheme,
                 customizer.miniSidebar ? 'mini-sidebar' : '',
                 customizer.setBorderCard ? 'cardBordered' : ''
             ]"
         >
             <Customizer />
-            <VerticalSidebarVue />
-            <VerticalHeaderVue />
+            <Sidebar />
+            <Header />
 
             <v-main>
                 <v-container fluid class="page-wrapper pb-sm-15 pb-10">
@@ -36,9 +36,9 @@
 
 <script setup lang="ts">
 import { RouterView } from 'vue-router';
-import VerticalSidebarVue from './vertical-sidebar/VerticalSidebar.vue';
-import VerticalHeaderVue from './vertical-header/VerticalHeader.vue';
-import Customizer from './customizer/Customizer.vue';
-import { useCustomizerStore } from '../../../modules/authentication/stores/customizer';
+import Sidebar from '@/core/layouts/full/sidebar/Sidebar.vue';
+import Header from '@/core/layouts/full/header/Header.vue';
+import Customizer from '@/core/layouts/full/widgets/customizer/Customizer.vue';
+import { useCustomizerStore } from '@/core/stores/customizer';
 const customizer = useCustomizerStore();
 </script>
