@@ -18,7 +18,7 @@
         <!-- ---------------------------------------------- -->
         <!---Navigation -->
         <!-- ---------------------------------------------- -->
-        <perfect-scrollbar class="scrollnavbar">
+        <perfect-scrollbar class="scroll-navbar">
             <v-list class="pa-6">
                 <!---Menu Loop -->
                 <template v-for="(item, i) in sidebarMenu">
@@ -38,7 +38,7 @@
 <script setup lang="ts">
 import { shallowRef } from 'vue';
 import { useCustomizerStore } from '@/core/stores/customizer';
-import sidebarItems from './sidebarItem';
+import sidebarItems from './sidebarItems';
 import NavGroup from './NavGroup.vue';
 import NavItem from './NavItem.vue';
 import NavCollapse from './NavCollapse.vue';

@@ -28,5 +28,8 @@
 import NavItem from './NavItem.vue';
 import Icon from './Icon.vue';
 
-const props = defineProps({ item: Object, level: Number });
+const props = defineProps({
+    item: Object,
+    level: Number
+});
 </script>

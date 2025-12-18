@@ -20,7 +20,7 @@
 }
 
 /*This is for the Vertical sidebar*/
-.scrollnavbar {
+.scroll-navbar {
     height: calc(100vh - 190px);
 
     .userbottom {
@@ -100,7 +100,7 @@
 }
 
 .v-navigation-drawer--rail {
-    .scrollnavbar .v-list .v-list-group__items,
+    .scroll-navbar .v-list .v-list-group__items,
     .hide-menu {
         opacity: 1;
     }
@@ -131,7 +131,7 @@
             display: block;
         }
 
-        .sidebarchip.hide-menu{
+        .sidebar-chip.hide-menu{
             opacity: 0;
         }
 
@@ -174,7 +174,7 @@
             .hide-menu {
                 opacity: 1;
             }
-            .sidebarchip.hide-menu{
+            .sidebar-chip.hide-menu{
                 opacity: 1;
             }
             .userbottom .hide-menu{

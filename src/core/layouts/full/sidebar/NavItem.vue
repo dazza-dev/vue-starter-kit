@@ -21,7 +21,7 @@
         <template v-slot:append v-if="item.chip">
             <v-chip
                 :color="item.chipColor"
-                :class="'sidebarchip hide-menu bg-' + item.chipBgColor"
+                :class="'sidebar-chip hide-menu bg-' + item.chipBgColor"
                 :size="item.chipIcon ? 'small' : 'small'"
                 :variant="item.chipVariant"
                 :prepend-icon="item.chipIcon"
@@ -35,5 +35,8 @@
 <script setup>
 import Icon from './Icon.vue';
 
-const props = defineProps({ item: Object, level: Number });
+const props = defineProps({
+    item: Object,
+    level: Number
+});
 </script>

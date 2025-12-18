@@ -8,5 +8,8 @@
 </template>
 
 <script setup>
-const props = defineProps({ item: Object, level: Number });
+const props = defineProps({
+    item: Object,
+    level: Number
+});
 </script>

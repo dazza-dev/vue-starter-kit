@@ -5,11 +5,10 @@
 @import './layout/reboot';
 @import './layout/container';
 @import './layout/sidebar';
-@import './layout/rtl';
 @import './layout/topbar';
-@import './layout/horizontal';
 @import './layout/dark';
 @import './layout/customizer';
+@import './layout/authentication';
 
 @import './components/VBreadcrumb';
 @import './components/VAlert';
@@ -28,16 +27,6 @@
 @import './components/VTabs';
 @import './components/VTable';
 @import './components/VExpansionpanel';
-
-/*Landing page css*/
-@import 'landingpage/header';
-@import 'landingpage/general';
-
-@import './pages/datatable';
-@import './pages/dashboards';
-@import './pages/editor';
-@import './pages/authentication';
-@import './pages/apps';
 
 @import 'vue3-perfect-scrollbar/dist/vue3-perfect-scrollbar.css';
 
