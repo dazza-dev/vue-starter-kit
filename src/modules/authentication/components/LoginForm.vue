@@ -1,14 +1,16 @@
 <template>
-    <div class="d-flex align-center text-center mb-6">
-        <div class="text-h6 w-100 px-5 font-weight-regular auth-divider position-relative">
-            <span class="bg-surface px-5 py-3 position-relative">Sign in with</span>
-        </div>
-    </div>
-    <Form @submit="validate" v-slot="{ errors, isSubmitting }" class="mt-5">
+    <v-form @submit="validate" v-slot="{ errors, isSubmitting }" class="mt-5">
         <v-label class="text-subtitle-1 font-weight-semibold pb-2 text-lightText">Username</v-label>
-        <VTextField v-model="username" :rules="emailRules" class="mb-8" required hide-details="auto"></VTextField>
+        <v-text-field v-model="username" :rules="emailRules" class="mb-8" required hide-details="auto"></v-text-field>
         <v-label class="text-subtitle-1 font-weight-semibold pb-2 text-lightText">Password</v-label>
-        <VTextField v-model="password" :rules="passwordRules" required hide-details="auto" type="password" class="pwdInput"></VTextField>
+        <v-text-field
+            v-model="password"
+            :rules="passwordRules"
+            required
+            hide-details="auto"
+            type="password"
+            class="pwdInput"
+        ></v-text-field>
         <div class="d-flex flex-wrap align-center my-3 ml-n2">
             <v-checkbox
                 v-model="checkbox"
@@ -29,7 +31,7 @@
         <div v-if="errors.apiError" class="mt-2">
             <v-alert color="error">{{ errors.apiError }}</v-alert>
         </div>
-    </Form>
+    </v-form>
 </template>
 
 <script setup lang="ts">

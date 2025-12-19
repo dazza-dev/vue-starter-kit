@@ -21,12 +21,6 @@
         </v-sheet>
         <!---/Search part -->
 
-        <!-- ---------------------------------------------- -->
-        <!-- Mega menu -->
-        <!-- ---------------------------------------------- -->
-        <div class="hidden-md-and-down">
-            <Navigation />
-        </div>
         <v-spacer />
         <!-- ---------------------------------------------- -->
         <!---right part -->
@@ -63,7 +57,6 @@ import Language from '@/core/layouts/full/widgets/language/Language.vue';
 import Notifications from '@/core/layouts/full/widgets/notifications/Notifications.vue';
 import Profile from '@/core/layouts/full/widgets/profile/Profile.vue';
 import Search from '@/core/layouts/full/widgets/search/Search.vue';
-import Navigation from '@/core/layouts/full/widgets/navigation/Navigation.vue';
 
 const customizer = useCustomizerStore();
 const appsDrawer = ref(false);

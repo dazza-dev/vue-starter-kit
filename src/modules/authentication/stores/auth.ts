@@ -1,37 +1,65 @@
 import { defineStore } from 'pinia';
-import { router } from '@/routes';
-import axios from 'axios';
-
-const baseUrl = `${import.meta.env.VITE_API_URL}/users`;
+import axios from '@/core/utils/axios';
 
 export const useAuthStore = defineStore({
     id: 'auth',
     state: () => ({
-        user: JSON.parse(localStorage.getItem('user')),
-        returnUrl: null
+        loading: false,
+        user: {}
     }),
     actions: {
-        /**
-         * Login
-         */
-        async login(username: string, password: string) {
-            const user = await axios.post(`${baseUrl}/authenticate`, { username, password });
+        // Profile
+        async profile() {
+            this.loading = true;
+            try {
+                const response = await axios.post('auth/profile');
+                this.user = response.data.user;
 
-            // update pinia state
-            this.user = user;
-            // store user details and jwt in local storage to keep user logged in between page refreshes
-            localStorage.setItem('user', JSON.stringify(user));
-            // redirect to previous url or default to home page
-            router.push(this.returnUrl || '/dashboard');
+                return response;
+            } catch (error) {
+                console.error('Error fetching profile in:', error);
+                throw error;
+            } finally {
+                this.loading = false;
+            }
         },
 
-        /**
-         * Logout
-         */
-        logout() {
-            this.user = null;
-            localStorage.removeItem('user');
-            router.push('/');
+        // Login
+        async login(username: string, password: string) {
+            this.loading = true;
+            try {
+                const response = await axios.post('auth/login', {
+                    username: username,
+                    password: password
+                });
+                this.user = response.data.user;
+                localStorage.setItem('token', response.data.token);
+
+                return response;
+            } catch (error) {
+                console.error('Error logging in:', error);
+                throw error;
+            } finally {
+                this.loading = false;
+            }
+        },
+
+        // Logout
+        async logout() {
+            this.loading = true;
+            try {
+                const response = await axios.post('auth/logout');
+
+                // Remove token from localStorage
+                localStorage.removeItem('token');
+
+                return response;
+            } catch (error) {
+                console.error('Error logout in:', error);
+                throw error;
+            } finally {
+                this.loading = false;
+            }
         }
     }
 });

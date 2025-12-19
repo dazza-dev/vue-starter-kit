@@ -37,8 +37,8 @@
 
 <script setup lang="ts">
 import { languages } from '@/core/layouts/full/widgets/headerData';
-import flagEn from '@/assets/images/flag/icon-flag-en.svg';
-import flagEs from '@/assets/images/flag/icon-flag-es.svg';
-import flagPt from '@/assets/images/flag/icon-flag-pt.svg';
-import flagFr from '@/assets/images/flag/icon-flag-fr.svg';
+import flagEn from '@/assets/images/flags/flag-en.svg';
+import flagEs from '@/assets/images/flags/flag-es.svg';
+import flagPt from '@/assets/images/flags/flag-pt.svg';
+import flagFr from '@/assets/images/flags/flag-fr.svg';
 </script>
