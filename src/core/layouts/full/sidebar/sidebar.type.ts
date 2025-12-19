@@ -1,4 +1,4 @@
-export interface menu {
+export interface MenuitemsType {
     header?: string;
     title?: string;
     icon?: any;
@@ -8,7 +8,7 @@ export interface menu {
     chipColor?: string;
     chipVariant?: string;
     chipIcon?: string;
-    children?: menu[];
+    children?: MenuitemsType[];
     disabled?: boolean;
     type?: string;
     subCaption?: string;

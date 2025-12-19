@@ -38,12 +38,12 @@
 <script setup lang="ts">
 import { shallowRef } from 'vue';
 import { useCustomizerStore } from '@/core/stores/customizer';
-import sidebarItems from './sidebarItems';
+import MenuItems from './MenuItems';
 import NavGroup from './NavGroup.vue';
 import NavItem from './NavItem.vue';
 import NavCollapse from './NavCollapse.vue';
 import Logo from '@/core/components/logo/Logo.vue';
 
 const customizer = useCustomizerStore();
-const sidebarMenu = shallowRef(sidebarItems);
+const sidebarMenu = shallowRef(MenuItems);
 </script>

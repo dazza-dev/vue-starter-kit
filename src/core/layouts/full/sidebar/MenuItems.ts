@@ -1,7 +1,7 @@
-import type { menu } from './sidebar.type';
+import type { MenuitemsType } from './sidebar.type';
 import { MenuIcon, CircleIcon, CircleOffIcon, BrandChromeIcon, MoodSmileIcon, StarIcon, AwardIcon } from 'vue-tabler-icons';
 
-const sidebarItems: menu[] = [
+const MenuItems: MenuitemsType[] = [
     { header: 'Starterkit' },
     {
         title: 'Sample Page',
@@ -81,4 +81,4 @@ const sidebarItems: menu[] = [
     }
 ];
 
-export default sidebarItems;
+export default MenuItems;

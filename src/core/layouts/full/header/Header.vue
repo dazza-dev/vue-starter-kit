@@ -35,11 +35,6 @@
         <!-- ---------------------------------------------- -->
         <Notifications />
 
-        <!-- right sidebar -->
-        <v-btn variant="text" color="primary" class="hidden-lg-and-up" icon @click.stop="appsDrawer = !appsDrawer">
-            <GridDotsIcon size="17" stroke-width="1.5" />
-        </v-btn>
-
         <!-- ---------------------------------------------- -->
         <!-- User Profile -->
         <!-- ---------------------------------------------- -->
@@ -52,14 +47,13 @@
 <script setup lang="ts">
 import { ref, watch } from 'vue';
 import { useCustomizerStore } from '@/core/stores/customizer';
-import { GridDotsIcon, Menu2Icon } from 'vue-tabler-icons';
+import { Menu2Icon } from 'vue-tabler-icons';
 import Language from '@/core/layouts/full/widgets/language/Language.vue';
 import Notifications from '@/core/layouts/full/widgets/notifications/Notifications.vue';
 import Profile from '@/core/layouts/full/widgets/profile/Profile.vue';
 import Search from '@/core/layouts/full/widgets/search/Search.vue';
 
 const customizer = useCustomizerStore();
-const appsDrawer = ref(false);
 const priority = ref(0);
 
 watch(priority, (newPriority) => {
