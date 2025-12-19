@@ -5,7 +5,7 @@ export const useCustomizerStore = defineStore({
     id: 'customizer',
     state: () =>
         ({
-            sidebarDrawer: false,
+            sidebarDrawer: true,
             customizerDrawer: false,
             miniSidebar: false,
             activeTheme: 'BLUE_THEME',
