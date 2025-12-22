@@ -10,7 +10,7 @@
                                 <div class="d-flex align-center text-h3 mt-n4">.</div>
                             </template>
                             <template v-slot:title="{ item }">
-                                <h6 class="text-subtitle-1">{{ item.text }}</h6>
+                                <h6 class="text-subtitle-1">{{ item.title }}</h6>
                             </template>
                         </v-breadcrumbs>
                     </div>
@@ -26,12 +26,18 @@
 </template>
 
 <script setup lang="ts">
-const props = defineProps({
-    title: String,
-    breadcrumbs: Array,
-    icon: String,
-    text: String
-});
+interface BreadcrumbItem {
+    title?: string;
+    disabled?: boolean;
+    href?: string;
+}
+
+const props = defineProps<{
+    title?: string;
+    breadcrumbs?: BreadcrumbItem[];
+    icon?: string;
+    text?: string;
+}>();
 </script>
 
 <style lang="scss">

@@ -1,8 +1,7 @@
 import { defineStore } from 'pinia';
 import type { ConfigProps } from '@/core/types/config.type';
 
-export const useCustomizerStore = defineStore({
-    id: 'customizer',
+export const useCustomizerStore = defineStore('customizer', {
     state: () =>
         ({
             sidebarDrawer: true,
