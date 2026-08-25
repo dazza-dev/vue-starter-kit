@@ -1,0 +1,50 @@
+@use 'variables' as *;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+html {
+    .bg-success,
+    .bg-primary,
+    .bg-secondary,
+    .bg-warning {
+        color: $white !important;
+    }
+}
+
+.border,
+.v-divider {
+    border-color: rgba(var(--v-border-color), 1) !important;
+}
+
+.avatar-border {
+    border: 2px solid rgb(var(--v-theme-surface)) !important;
+}
+
+.v-dialog {
+    &.dialog-mw {
+        max-width: 800px;
+    }
+}
+
+.v-btn.v-btn--icon:disabled {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    opacity: 1 !important;
+    pointer-events: visible !important;
+    cursor: not-allowed !important;
+
+    .v-btn__content {
+        opacity: 0.4;
+    }
+
+    .v-btn__overlay {
+        background-color: transparent !important;
+    }
+}

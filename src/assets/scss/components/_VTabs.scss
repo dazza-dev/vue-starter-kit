@@ -1,0 +1,22 @@
+@use '../variables' as *;
+
+.theme-tab {
+    &.v-tabs {
+        .v-tab {
+            border-radius: $border-radius-root !important;
+            min-width: auto !important;
+            &.v-slide-group-item--active {
+                background: rgb(var(--v-theme-primary));
+            }
+        }
+    }
+}
+
+// Bold label and thicker indicator than vuetify's default 500/2px.
+.v-tab.v-btn {
+    font-weight: 600;
+}
+
+.v-tab__slider {
+    height: 3px;
+}

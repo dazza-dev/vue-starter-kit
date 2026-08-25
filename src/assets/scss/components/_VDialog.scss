@@ -1,0 +1,15 @@
+@use '../variables' as *;
+
+// Vuetify sets a 4px radius and a 32% overlay; modals use the theme's radius and more contrast.
+.v-dialog {
+    --v-overlay-opacity: 0.5;
+
+    > .v-overlay__content > .v-card,
+    > .v-overlay__content > .v-sheet,
+    > .v-overlay__content > form > .v-card,
+    > .v-overlay__content > form > .v-sheet {
+        border-radius: $border-radius-root;
+        // Without clipping, header and footer paint their square corners over the card's.
+        overflow: hidden;
+    }
+}

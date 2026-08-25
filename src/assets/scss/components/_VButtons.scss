@@ -1,0 +1,17 @@
+//
+// global
+
+.page-header-actions .v-btn {
+    letter-spacing: 0;
+    border-radius: 12px !important;
+    min-height: 44px;
+    padding: 0 24px !important;
+}
+
+.v-btn-group .v-btn {
+    height: inherit !important;
+}
+
+.v-btn-group {
+    border-color: rgb(var(--v-theme-borderColor)) !important;
+}
